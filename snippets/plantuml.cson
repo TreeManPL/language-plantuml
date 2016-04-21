@@ -314,3 +314,66 @@
   'Component':
     'prefix':'comp'
     'body': 'component "${1:title}" as ${2:alias}'
+
+  'Sequence Call':
+    'prefix':'scall'
+    'body': '${1:A} -> ${2:B} : ${3:Action}'
+
+  'Sequence Response':
+    'prefix':'sres'
+    'body': '${1:A} <<-- ${2:B} : ${3:Action}'
+
+  'Autonumber':
+    'prefix':'autonumber'
+    'body': 'autonumber'
+
+  'Delay':
+    'prefix':'delay'
+    'body': '... ${1:Delay} ...'
+
+  'Skinparam':
+    'prefix':'skinparam'
+    'body': 'skinparam ${1:param}'
+
+  'Hide footbox':
+    'prefix':'hide'
+    'body': 'hide footbox'
+
+  'Title':
+    'prefix':'title'
+    'body': 'title ${1:title}'
+
+  'Caption':
+    'prefix':'caption'
+    'body': 'caption ${1:caption}'
+
+  'Comment block':
+    'prefix':'commentb'
+    'body': '''
+      /' ${1:comment} '/
+      '''
+
+  'Comment line':
+    'prefix':'commentl'
+    'body': '''
+      '${1:comment}'
+      '''
+  'Legend':
+    'prefix':'legend'
+    'body': '''
+      legend
+      ${1}
+      endlegend
+    '''
+
+  'Participant':
+    'prefix':'participant'
+    'body': 'participant "${1:Name}"'
+
+  'Box block':
+    'prefix':'boxb'
+    'body': '''
+      box "${1:BoxName}"
+      ${2}
+      end box
+    '''
